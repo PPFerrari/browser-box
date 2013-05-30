@@ -1,0 +1,74 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #453533;
+}
+
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 900;
+}
+
+#browser-choise {
+  font-family: 'Helvetica', Arial, Verdana, sans-serif;
+  position: absolute;
+  width: 800px;
+  min-height: 400px;
+  background: #f3f3f3;
+  z-index: 950;
+  border-radius: 4px;
+  border: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  color: #333;
+  text-shadow: 0px 1px 1px white;
+  box-shadow: 0px 2px 30px #6a6a6a;
+}
+
+
+.first { 
+  display: block;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.second { 
+  font-size: 22px;
+  font-weight: 200;
+  color: #616161;
+}
+
+
+#box-container {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+
+.box.chrome  { background: url('img/chrome.png') no-repeat 50%; }
+.box.firefox  { background: url('img/firefox.png') no-repeat 50%; }
+.box.safari  { background: url('img/safari.png') no-repeat 50%; }
+
+
+.box button { 
+  margin-top: 200px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
