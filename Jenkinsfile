@@ -9,7 +9,6 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo "testing magic..."'
-        input(message: 'Deploy?', id: 'deploy', ok: 'Yes')
       }
     }
     stage('Commit') {
