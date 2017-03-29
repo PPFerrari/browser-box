@@ -12,9 +12,14 @@ pipeline {
         input(message: 'Deploy?', id: 'deploy', ok: 'Yes')
       }
     }
-    stage('Deploy') {
+    stage('Commit') {
       steps {
-        sh 'echo "deploying..."'
+        sh 'echo "committing..."'
+      }
+    }
+    stage('deploy') {
+      steps {
+        input(message: 'Deploy in Prod?', id: 'deploy', ok: 'deploy')
       }
     }
   }
